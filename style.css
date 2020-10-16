@@ -1,0 +1,65 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  color: indigo;
+}
+h1{
+  text-align: center;
+  color: indigo;
+  margin-top: 5rem;
+}
+.plot-area{
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.chart-area{
+  /* width: 100%;
+  height: 100%; */
+  border-left: 1px solid rgba(79,59,131, .3);
+  border-bottom: 1px solid rgba(79,59,131, .3);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: stretch;
+}
+.chart-cont{
+  max-width: 60%;
+  min-height: 70vh;
+  border: 1px solid rgba(79,59,131, .3);
+  box-shadow: 2px 2px 50px 1px rgba(79,59,131, .2);
+  border-radius: 1rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.y-axis{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  margin-right: .5rem;
+  
+}
+.x-axis{
+  height: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  text-align: center;
+  /* margin-top: .5rem; */
+}
+.bar-cont{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.bar-cont span{
+  background-color: indigo;
+  height: 0;
+  width: .5rem;
+  margin: 0 .15rem;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
